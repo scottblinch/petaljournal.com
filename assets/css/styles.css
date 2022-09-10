@@ -1,169 +1,128 @@
 body {
-    font-family: 'IM Fell DW Pica', serif;
-    color: 181818;
-    font-size: 18px;
+  font-family: 'IM Fell DW Pica', serif;
+  color: #181818;
+  font-size: 18px;
 }
 
 a {
-    text-decoration: none;
-    color: 181818;
+  text-decoration: none;
+  color: #181818;
 }
 
 a:hover {
-    color: 181818;
-}
-
-.page-header {
-    margin: 0 0 30px;
-    border: 0;
-    padding: 0;
+  color: #181818;
 }
 
 h1 {
-    font-size: 20px;
-    margin: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-size: 20px;
+  margin: 0 0 60px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h2 {
-    font-size: 18px;
-    text-transform: uppercase;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
-.wp-post-image {
-    margin-bottom: 50px;
+img {
+  margin-bottom: 50px;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .btn-submit-front-page {
-    font-style: italic;
+  font-style: italic;
 }
 
 .navbar-brand {
-    font-size: 22px;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-style: italic;
-    color: 181818;
-    height: auto;
-    padding: 12px 15px;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-style: italic;
+  color: #181818;
+  height: auto;
+  padding: 12px 15px;
 }
 
 .navbar-default {
-    background: 0 0;
-    border: none;
-    padding-top: 65px;
-    padding-bottom: 15px;
+  background: 0 0;
+  border: none;
+  padding-top: 65px;
+  padding-bottom: 15px;
 }
 
 .navbar-default .navbar-brand {
-    color: 181818;
+  color: #181818;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand.active {
-    color: 181818;
-    background: 0 0;
+  color: #181818;
+  background: 0 0;
 }
 
 .navbar-default .navbar-nav {
-    font-size: 14px;
-    line-height: 28.5px;
-    letter-spacing: 2px;
-    clear: left;
-    margin-left: -15px;
+  font-size: 14px;
+  line-height: 28.5px;
+  letter-spacing: 2px;
+  clear: left;
+  margin-left: -15px;
 }
 
 .navbar-default .navbar-nav>li a {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li.active>a,
 .navbar-default .navbar-nav>li.active>a:hover {
-    color: #333;
-    background: 0 0;
+  color: #333;
+  background: 0 0;
 }
 
-.page.poems .page-header {
-    display: none;
+.poems .wp-tag-cloud {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.page.poems .wp-tag-cloud {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+.poems .wp-tag-cloud li a {
+  text-transform: uppercase;
+  padding: 15px 0;
+  font-size: 16px;
+  letter-spacing: 5px;
+  display: inline-block;
+  color: inherit;
 }
 
-.page.poems .wp-tag-cloud li a {
-    text-transform: uppercase;
-    padding: 15px 0;
-    font-size: 16px;
-    letter-spacing: 5px;
-    display: inline-block;
+.poem + .poem {
+  margin-top: 60px;
 }
 
-.poem {
-    margin-bottom: 90px;
-}
-
-.poem h1 {
-    margin-bottom: 10px;
-}
-
-.poem .entry-poet {
-    margin-bottom: 30px;
-    font-size: 16px;
-}
-
-.poem .entry-poet a {
-    color: #777;
-}
-
-.page.submit .page-header {
-    display: none;
-}
-
-/* Gallery Shortcode */
-.gallery-row {
-    padding: 15px 0;
+.poem h2 {
+  margin-bottom: 30px;
 }
 
 .entry-title {
-    margin: 60px 0 30px;
+  margin: 60px 0 30px;
+}
+
+.description {
+  margin-top: 90px;
 }
 
 .content-info {
-    text-align: center;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 100px 0 20px;
-}
-
-.aligncenter {
-    display: block;
-    margin: 0 auto;
-}
-
-.alignleft {
-    float: left;
-}
-
-.alignright {
-    float: right;
-}
-
-figure.alignnone {
-    margin-left: 0;
-    margin-right: 0;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 100px 0 20px;
 }
