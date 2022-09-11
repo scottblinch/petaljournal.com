@@ -4,54 +4,30 @@
     <meta charset="utf-8">
     <title>Petal Journal - {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-reboot@4.5.6/reboot.css" integrity="sha256-NqCb52G5cOo+mE3Q1asDA+xnvGifFUpu4N5+7vWLyD0=" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-
   <body>
-    <header class="banner navbar navbar-default navbar-static-top" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Petal Journal</a>
-        </div>
-        <nav class="collapse navbar-collapse" role="navigation">
-          <ul id="menu-primary-navigation" class="nav navbar-nav">
+    <div class="container">
+      <header class="header">
+        <a class="header-brand" href="/">Petal Journal</a>
+        <nav class="nav" role="navigation">
+          <ul class="nav-links">
             {% for item in site.data.navigation %}
-              <li class="menu-poems">
-                <a href="{{ item.link }}" {% if page.url == item.link %}aria-current="page"{% endif %}>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}aria-current="page"{% endif %}>
                   {{ item.name }}
                 </a>
               </li>
             {% endfor %}
           </ul>
         </nav>
-      </div>
-    </header>
-    <div class="wrap container">
-      <div class="content">
-        <main class="main">
-          {{ content }}
-        </main>
-      </div>
-    </div>
-    <footer class="content-info" role="contentinfo">
-      <div class="container">
-        <p>© 2022 Petal Journal</p>
-      </div>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+    <footer class="footer">
+      <p>© 2022 Petal Journal</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
   </body>
 </html>

@@ -3,19 +3,17 @@ title: Poems
 permalink: /poems/
 ---
 
-<div class="poems">
-  <img width="800"
-      height="530"
-      src="/assets/img/peach-roses.jpg"
-      alt="">
-  <h1>Poems</h1>
-  <ul class="wp-tag-cloud">
-    {% for poet in site.poet %}
-      <li>
-        <a href="{{ poet.url }}">
-          {{ poet.name }}
-        </a>
-      </li>
-  {% endfor %}
-  </ul>
-</div>
+<img width="800"
+    height="530"
+    src="/assets/img/peach-roses.jpg"
+    alt="">
+<h1>Poems</h1>
+<ul class="poems">
+  {% for poet in site.poet %}
+    <li>
+      <a href="{{ poet.url }}">
+        {{ poet.name }}
+      </a>
+    </li>
+{% endfor %}
+</ul>
